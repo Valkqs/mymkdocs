@@ -204,16 +204,17 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../../.." class="md-tabs__link">
-        
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
   
   主页
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -244,6 +245,24 @@
     
   
 
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../%E9%80%9A%E8%AF%86/%E5%88%9B%E4%B8%9A%E5%90%AF%E7%A8%8B/" class="md-tabs__link">
+          
+  
+  通识
+
+        </a>
+      </li>
     
   
 
@@ -304,16 +323,83 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   <span class="md-ellipsis">
     主页
   </span>
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            主页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    (｡･∀･)ﾉﾞ嗨
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../latest/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    最近
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -493,6 +579,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#c7" class="md-nav__link">
+    <span class="md-ellipsis">
+      C7 堆
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#c8" class="md-nav__link">
     <span class="md-ellipsis">
       C8 并查集
@@ -598,6 +693,72 @@
   
   
   
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    通识
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            通识
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../%E9%80%9A%E8%AF%86/%E5%88%9B%E4%B8%9A%E5%90%AF%E7%A8%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    创业启程
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     <li class="md-nav__item">
       <a href="../../../test/" class="md-nav__link">
         
@@ -651,6 +812,15 @@
   <a href="#c6" class="md-nav__link">
     <span class="md-ellipsis">
       C6 二叉树，二叉搜索树
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#c7" class="md-nav__link">
+    <span class="md-ellipsis">
+      C7 堆
     </span>
   </a>
   
@@ -756,6 +926,47 @@ postorder of T: <code>KLEFBGCMHIJDA</code>    inorder of BT: <code>KLEFBGCMHIJDA
 <img alt="本地路径" src="../eg1a.png" />
 对于B：4 5，7 8 不符。  对于C：3 4，6 7 不符。  对于D：9 10，1 10 不符</li>
 </ul>
+<h3 id="c7">C7 堆<a class="headerlink" href="#c7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>插入(insert)：由于堆是一棵完全二叉树，所以向堆中插入元素只有一个位置。假设这里我们的堆是最小堆。将该元素放在这个唯一位置上后，我们还需要将元素与其父节点比较，若父节点较大，则将父节点下移。若父节点较小，则说明找到了当前元素应该插入的位置，即完成了一次percolate up。
+<div class="language-C highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="cm">/* H-&gt;Element[ 0 ] is a sentinel */</span><span class="w"> </span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="kt">void</span><span class="w">  </span><span class="nf">Insert</span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w">  </span><span class="n">X</span><span class="p">,</span><span class="w">  </span><span class="n">PriorityQueue</span><span class="w">  </span><span class="n">H</span><span class="w"> </span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="w">    </span><span class="kt">int</span><span class="w">  </span><span class="n">i</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">IsFull</span><span class="p">(</span><span class="w"> </span><span class="n">H</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="w">    </span><span class="n">Error</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;Priority queue is full&quot;</span><span class="w"> </span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a><a href="#__codelineno-2-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="w">    </span><span class="k">return</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a><a href="#__codelineno-2-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a><a href="#__codelineno-2-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">++</span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">;</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a><a href="#__codelineno-2-10"><span class="linenos" data-linenos="10 "></span></a><span class="w">    </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">/</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="p">];</span><span class="w"> </span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a><a href="#__codelineno-2-11"><span class="linenos" data-linenos="11 "></span></a>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a><a href="#__codelineno-2-12"><span class="linenos" data-linenos="12 "></span></a><span class="w">    </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><a href="#__codelineno-2-13"><span class="linenos" data-linenos="13 "></span></a><span class="p">}</span>
+</code></pre></div>
+这段例程中，<code>H-&gt;Element[0]</code>被设置为一个小于堆中最小数的一个数，以使某个很小的数到了堆顶能够停下。</li>
+<li>删除堆顶(delete min)：当我们需要删除堆顶元素时，我们一般用堆中的最后一个元素替换堆顶的元素，再将该元素与其两个孩子节点比较，用更小的那个孩子节点替换它，以此一步步percolate down。
+<div class="language-C highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><a href="#__codelineno-3-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="n">ElementType</span><span class="w">  </span><span class="nf">DeleteMin</span><span class="p">(</span><span class="w"> </span><span class="n">PriorityQueue</span><span class="w">  </span><span class="n">H</span><span class="w"> </span><span class="p">)</span><span class="w"> </span>
+<a id="__codelineno-3-2" name="__codelineno-3-2"></a><a href="#__codelineno-3-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-3-3" name="__codelineno-3-3"></a><a href="#__codelineno-3-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="w">    </span><span class="kt">int</span><span class="w">  </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">Child</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-3-4" name="__codelineno-3-4"></a><a href="#__codelineno-3-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="w">    </span><span class="n">ElementType</span><span class="w">  </span><span class="n">MinElement</span><span class="p">,</span><span class="w"> </span><span class="n">LastElement</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-3-5" name="__codelineno-3-5"></a><a href="#__codelineno-3-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">IsEmpty</span><span class="p">(</span><span class="w"> </span><span class="n">H</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+<a id="__codelineno-3-6" name="__codelineno-3-6"></a><a href="#__codelineno-3-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="w">         </span><span class="n">Error</span><span class="p">(</span><span class="w"> </span><span class="s">&quot;Priority queue is empty&quot;</span><span class="w"> </span><span class="p">);</span><span class="w"> </span>
+<a id="__codelineno-3-7" name="__codelineno-3-7"></a><a href="#__codelineno-3-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="w">         </span><span class="k">return</span><span class="w">  </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">];</span><span class="w">   </span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-3-8" name="__codelineno-3-8"></a><a href="#__codelineno-3-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="w">    </span><span class="n">MinElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="p">];</span><span class="w">  </span><span class="cm">/* save the min element */</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9"></a><a href="#__codelineno-3-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="w">    </span><span class="n">LastElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Size</span><span class="o">--</span><span class="w"> </span><span class="p">];</span><span class="w">  </span><span class="cm">/* take last and reset size */</span>
+<a id="__codelineno-3-10" name="__codelineno-3-10"></a><a href="#__codelineno-3-10"><span class="linenos" data-linenos="10 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Size</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Child</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">  </span><span class="cm">/* Find smaller child */</span><span class="w"> </span>
+<a id="__codelineno-3-11" name="__codelineno-3-11"></a><a href="#__codelineno-3-11"><span class="linenos" data-linenos="11 "></span></a><span class="w">         </span><span class="n">Child</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-3-12" name="__codelineno-3-12"></a><a href="#__codelineno-3-12"><span class="linenos" data-linenos="12 "></span></a><span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">Child</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Size</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="n">Child</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="n">Child</span><span class="p">])</span><span class="w"> </span>
+<a id="__codelineno-3-13" name="__codelineno-3-13"></a><a href="#__codelineno-3-13"><span class="linenos" data-linenos="13 "></span></a><span class="w">           </span><span class="n">Child</span><span class="o">++</span><span class="p">;</span><span class="w">     </span>
+<a id="__codelineno-3-14" name="__codelineno-3-14"></a><a href="#__codelineno-3-14"><span class="linenos" data-linenos="14 "></span></a><span class="w">         </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">LastElement</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">Child</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">)</span><span class="w">   </span><span class="cm">/* Percolate one level */</span><span class="w"> </span>
+<a id="__codelineno-3-15" name="__codelineno-3-15"></a><a href="#__codelineno-3-15"><span class="linenos" data-linenos="15 "></span></a><span class="w">           </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">Child</span><span class="w"> </span><span class="p">];</span><span class="w"> </span>
+<a id="__codelineno-3-16" name="__codelineno-3-16"></a><a href="#__codelineno-3-16"><span class="linenos" data-linenos="16 "></span></a><span class="w">         </span><span class="k">else</span><span class="w">     </span><span class="k">break</span><span class="p">;</span><span class="w">   </span><span class="cm">/* find the proper position */</span>
+<a id="__codelineno-3-17" name="__codelineno-3-17"></a><a href="#__codelineno-3-17"><span class="linenos" data-linenos="17 "></span></a><span class="w">    </span><span class="p">}</span><span class="w"> </span>
+<a id="__codelineno-3-18" name="__codelineno-3-18"></a><a href="#__codelineno-3-18"><span class="linenos" data-linenos="18 "></span></a><span class="w">    </span><span class="n">H</span><span class="o">-&gt;</span><span class="n">Elements</span><span class="p">[</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LastElement</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-3-19" name="__codelineno-3-19"></a><a href="#__codelineno-3-19"><span class="linenos" data-linenos="19 "></span></a><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">MinElement</span><span class="p">;</span><span class="w"> </span>
+<a id="__codelineno-3-20" name="__codelineno-3-20"></a><a href="#__codelineno-3-20"><span class="linenos" data-linenos="20 "></span></a><span class="p">}</span>
+</code></pre></div></li>
+</ul>
 <h3 id="c8">C8 并查集<a class="headerlink" href="#c8" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -767,21 +978,21 @@ Let <span class="arithmatex">\(T\)</span> be the tree created by union-by-size w
 </li>
 <li><code>symmetric</code> 对称性(<span class="arithmatex">\(\forall a\in S,a\ R\ a\)</span>)  <code>reflexive</code> 自反性(<span class="arithmatex">\(a\ R\ b \Leftrightarrow b\ R\ a\)</span>)  <code>transitive</code> 传递性(<span class="arithmatex">\(a\ R\ b,b\ R\ c\Rightarrow b\ R\ c\)</span>)</li>
 <li>Path Compression示例代码
-<div class="language-C highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><a href="#__codelineno-2-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="n">SetType</span><span class="w">  </span><span class="nf">Find</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w">  </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">DisjSet</span><span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a><a href="#__codelineno-2-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="p">{</span>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><a href="#__codelineno-2-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">)</span><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">X</span><span class="p">;</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a><a href="#__codelineno-2-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="w">    </span><span class="k">else</span><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">],</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="p">);</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><a href="#__codelineno-2-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="p">}</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a><a href="#__codelineno-2-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="n">SetType</span><span class="w">  </span><span class="nf">Find</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w">  </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">DisjSet</span><span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="p">)</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a><a href="#__codelineno-2-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="p">{</span><span class="w">   </span>
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a><a href="#__codelineno-2-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="w">    </span><span class="n">ElementType</span><span class="w">  </span><span class="n">root</span><span class="p">,</span><span class="w">  </span><span class="n">trail</span><span class="p">,</span><span class="w">  </span><span class="n">lead</span><span class="p">;</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a><a href="#__codelineno-2-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">);</span><span class="w">  </span><span class="cm">/* find the root */</span>
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a><a href="#__codelineno-2-10"><span class="linenos" data-linenos="10 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">root</span><span class="p">;</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lead</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a><a href="#__codelineno-2-11"><span class="linenos" data-linenos="11 "></span></a><span class="w">       </span><span class="n">lead</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">   </span>
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a><a href="#__codelineno-2-12"><span class="linenos" data-linenos="12 "></span></a><span class="w">       </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">;</span><span class="w">   </span>
-<a id="__codelineno-2-13" name="__codelineno-2-13"></a><a href="#__codelineno-2-13"><span class="linenos" data-linenos="13 "></span></a><span class="w">    </span><span class="p">}</span><span class="w">  </span>
-<a id="__codelineno-2-14" name="__codelineno-2-14"></a><a href="#__codelineno-2-14"><span class="linenos" data-linenos="14 "></span></a><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">root</span><span class="w"> </span><span class="p">;</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15"></a><a href="#__codelineno-2-15"><span class="linenos" data-linenos="15 "></span></a><span class="p">}</span>
+<div class="language-C highlight"><span class="filename">C</span><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><a href="#__codelineno-4-1"><span class="linenos" data-linenos=" 1 "></span></a><span class="n">SetType</span><span class="w">  </span><span class="nf">Find</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w">  </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">DisjSet</span><span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><a href="#__codelineno-4-2"><span class="linenos" data-linenos=" 2 "></span></a><span class="p">{</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><a href="#__codelineno-4-3"><span class="linenos" data-linenos=" 3 "></span></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="p">)</span><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">X</span><span class="p">;</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4"></a><a href="#__codelineno-4-4"><span class="linenos" data-linenos=" 4 "></span></a><span class="w">    </span><span class="k">else</span><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">X</span><span class="w"> </span><span class="p">],</span><span class="w"> </span><span class="n">S</span><span class="w"> </span><span class="p">);</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><a href="#__codelineno-4-5"><span class="linenos" data-linenos=" 5 "></span></a><span class="p">}</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a><a href="#__codelineno-4-6"><span class="linenos" data-linenos=" 6 "></span></a><span class="n">SetType</span><span class="w">  </span><span class="nf">Find</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">ElementType</span><span class="w">  </span><span class="n">X</span><span class="p">,</span><span class="w"> </span><span class="n">DisjSet</span><span class="w">  </span><span class="n">S</span><span class="w"> </span><span class="p">)</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a><a href="#__codelineno-4-7"><span class="linenos" data-linenos=" 7 "></span></a><span class="p">{</span><span class="w">   </span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a><a href="#__codelineno-4-8"><span class="linenos" data-linenos=" 8 "></span></a><span class="w">    </span><span class="n">ElementType</span><span class="w">  </span><span class="n">root</span><span class="p">,</span><span class="w">  </span><span class="n">trail</span><span class="p">,</span><span class="w">  </span><span class="n">lead</span><span class="p">;</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a><a href="#__codelineno-4-9"><span class="linenos" data-linenos=" 9 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">);</span><span class="w">  </span><span class="cm">/* find the root */</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a><a href="#__codelineno-4-10"><span class="linenos" data-linenos="10 "></span></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">X</span><span class="p">;</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">root</span><span class="p">;</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">lead</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a><a href="#__codelineno-4-11"><span class="linenos" data-linenos="11 "></span></a><span class="w">       </span><span class="n">lead</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w">   </span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a><a href="#__codelineno-4-12"><span class="linenos" data-linenos="12 "></span></a><span class="w">       </span><span class="n">S</span><span class="p">[</span><span class="w"> </span><span class="n">trail</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">root</span><span class="w"> </span><span class="p">;</span><span class="w">   </span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><a href="#__codelineno-4-13"><span class="linenos" data-linenos="13 "></span></a><span class="w">    </span><span class="p">}</span><span class="w">  </span>
+<a id="__codelineno-4-14" name="__codelineno-4-14"></a><a href="#__codelineno-4-14"><span class="linenos" data-linenos="14 "></span></a><span class="w">    </span><span class="k">return</span><span class="w">  </span><span class="n">root</span><span class="w"> </span><span class="p">;</span>
+<a id="__codelineno-4-15" name="__codelineno-4-15"></a><a href="#__codelineno-4-15"><span class="linenos" data-linenos="15 "></span></a><span class="p">}</span>
 </code></pre></div></li>
 </ul>
 
