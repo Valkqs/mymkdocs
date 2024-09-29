@@ -1414,6 +1414,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      选址问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学规划建模基本要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      时间分配问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1623,6 +1650,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      选址问题
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学规划建模基本要求
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      时间分配问题
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1640,7 +1694,7 @@
 
 <h1 id="_1">数学规划<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 1681 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 6 分钟</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5Z"/></svg></span> 约 2395 个字 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13Z"/></svg></span> 预计阅读时间 8 分钟</p>
 </div>
 <h2 id="operations-research">运筹学(Operations Research)<a class="headerlink" href="#operations-research" title="Permanent link">&para;</a></h2>
 <div class="admonition info">
@@ -1849,6 +1903,73 @@ p_{ij}=\left\{
 </ul>
 </li>
 </ul>
+<h2 id="_6">选址问题<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题背景</p>
+<p>平面上有 <span class="arithmatex">\(n\)</span> 个点，求一个面积最小的圆，使得这 <span class="arithmatex">\(n\)</span> 个点都在圆内。</p>
+</div>
+<p>记第 <span class="arithmatex">\(j\)</span> 个点的坐标为 <span class="arithmatex">\((x_j,y_j)\)</span>，<span class="arithmatex">\(j=1,2,\cdots,n\)</span>。我们给出一个带二次约束的二次规划模型：</p>
+<div class="admonition note">
+<p><strong>决策变量</strong>：圆心坐标 <span class="arithmatex">\((x_0,y_0)\)</span>，圆半径 <span class="arithmatex">\(r\)</span></p>
+<p><strong>目标函数</strong>：<span class="arithmatex">\(\min r^2\)</span></p>
+<p><strong>约束条件</strong>：<span class="arithmatex">\((x_j-x_0)^2+(y_j-y_0)^2\leq r^2\)</span>，<span class="arithmatex">\(j=1,2,\cdots,n\)</span></p>
+</div>
+<p>约束为二次时，比较难写，我们可以将其转化成更简单的形式：</p>
+<div class="admonition note">
+<p><strong>决策变量</strong>改为 <span class="arithmatex">\(\lambda=r^2-(x_0^2+y_0^2)\)</span></p>
+<p><strong>目标函数</strong>改为 <span class="arithmatex">\(\min\lambda+(x_0^2+y_0^2)\)</span></p>
+<p><strong>约束条件</strong>改为 <span class="arithmatex">\(\lambda+2x_0x_j+2y_0y_j\geq x_j^2+y_j^2\)</span>，<span class="arithmatex">\(j=1,2,\cdots,n\)</span></p>
+</div>
+<h2 id="_7">数学规划建模基本要求<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<ul>
+<li>是问题和要求和限制的真实反馈<ul>
+<li>数学规划最优解（可行解）与问题最优解（可行解）有对应的关系</li>
+<li>是否遗漏问题的隐含约束，决策变量的必然要求，多组决策变量的联系等约束条件</li>
+</ul>
+</li>
+<li>要符合数学规范的内容规范和形式要求<ul>
+<li>要素完整，变量指标运用准确，<strong>逻辑运算和集合运算</strong>一般不在数学规划中出现</li>
+</ul>
+</li>
+<li>可能存在多个数学规划描述<ul>
+<li>复杂目标函数和约束条件的简化，0-1变量灵活运用</li>
+<li>可行域约简，数学规划重构，分解与松弛</li>
+</ul>
+</li>
+<li>适用范围<ul>
+<li>有更简单方法时不需要数学规划</li>
+<li>最优解不具有必要性，或求解时间高于精度要求，不必要用数学规划</li>
+</ul>
+</li>
+</ul>
+<h2 id="_8">时间分配问题<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<div class="admonition question">
+<p class="admonition-title">问题背景</p>
+<p>有 <span class="arithmatex">\(T\)</span> 天时间可用于安排复习 <span class="arithmatex">\(n\)</span> 门课程，每天只能复习一门课程，每门课程至少复习一天。用 <span class="arithmatex">\(t\)</span> 天时间复习第 <span class="arithmatex">\(j\)</span> 门课程可使该门课程提高 <span class="arithmatex">\(p_{jt}\)</span> 分。如何制定复习计划可使所有课程提高的总分尽可能大？</p>
+</div>
+<div class="admonition note">
+<p><strong>决策变量</strong>：<span class="arithmatex">\(x_{jt}\)</span> 表示第 <span class="arithmatex">\(j\)</span> 门课程是否复习 <span class="arithmatex">\(t\)</span> 天，<span class="arithmatex">\(j=1,2,\cdots,n\)</span>，<span class="arithmatex">\(t=1,2,\cdots,T\)</span></p>
+<div class="arithmatex">\[x_{jt}=\left\{\begin{array}{ll}1,&amp;\text{第 $j$ 门课程复习 $t$ 天}\\0,&amp;\text{其他}\end{array}\right.\]</div>
+<p><strong>目标函数</strong>：<span class="arithmatex">\(\max\sum\limits_{j=1}^n\sum\limits_{t=1}^Tp_{jt}x_{jt}\)</span></p>
+<p><strong>约束条件</strong>：<span class="arithmatex">\(\sum\limits_{t=1}^Tx_{jt}=1\)</span>；<span class="arithmatex">\(\sum\limits_{j=1}^n\sum\limits_{t=1}^Ttx_{jt}\leq T\)</span></p>
+</div>
+<hr />
+<h1 id="_9">案例一：赛程编制<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<ul>
+<li>Symmetry and separation(对称性和分离性)</li>
+<li>Breaks(出现连续的客场或主场比赛--这是我们不愿看到的)</li>
+<li>The carry-over effect(是否连续打弱队等等)</li>
+</ul>
+</div>
+<h2 id="breaks">breaks数<a class="headerlink" href="#breaks" title="Permanent link">&para;</a></h2>
+<hr />
+<p>懒得写了，看杰哥的吧——<a href="https://note.jiepeng.tech/Fundemental/Mathematical-Modeling/19-Schedule">赛程编制</a></p>
+<h1 id="_10">支持向量机<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h1>
+<div class="admonition note">
+<p class="admonition-title">问题背景</p>
+<p>将一数据集 <span class="arithmatex">\(S\)</span> 分为 <span class="arithmatex">\(C_1,C_2\)</span> 两类，每个数据有 <span class="arithmatex">\(n\)</span> 个特征。我们应该如何通过训练集来找出一个超平面，使得它判别效果最好？</p>
+</div>
 
 
 
